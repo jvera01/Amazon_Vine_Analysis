@@ -1,4 +1,5 @@
 # Amazon_Vine_Analysis
+![](Resources/B1.PNG)
 
 # Overview & Purpose
 
@@ -32,19 +33,33 @@ All four DataFrames are loaded into their respective tables in pgAdmin (10 pt)
 Deliverable 1: Perform ETL on Amazon Product Reviews
 From the following Amazon Review datasets (Links to an external site.), pick a dataset that you would like to analyze. All the datasets have the same schemata, as shown in this image:
 
-D1.png
+![](Resources/d1.png)
 
 ## The customers_table DataFrame
-D1.1.png
+The customers_table DataFrame To create the customers_table, use the code in the Amazon_Reviews_ETL_starter_code.ipynb file and follow the steps below to aggregate the reviews by customer_id. Use the groupby() function on the customer_id column of the DataFrame you created in Step 6.
+Count all the customer ids using the agg() function by chaining it to the groupby() function. After you use this function, a new column will be created, count(customer_id).
+Rename the count(customer_id) column using the withColumnRenamed() function so it matches the schema for the customers_table in pgAdmin.
+
+The final customers_table DataFrame should look like this:
+![](Resources/d1.1.png)
 
 ## The products_table DataFrame
-D1.2.png
+To create the products_table, use the select() function to select the product_id and product_title, then drop duplicates with the drop_duplicates() function to retrieve only unique product_ids. Refer to the code snippet provided in the Amazon_Reviews_ETL_starter_code.ipynb file for assistance.
+
+The final products_table DataFrame should look like this:
+![](Resources/d1.2.png)
 
 ## The review_id_table DataFrame
-D1.3.png
+To create the review_id_table, use the select() function to select the columns that are in the review_id_table in pgAdmin, and convert the review_date column to a date using the code snippet provided in the Amazon_Reviews_ETL_starter_code.ipynb file.
+
+The final review_id_table DataFrame should look like this:
+![](Resources/d1.3.png)
 
 ## The vine_table DataFrame
-D1.4.png
+To create the vine_table, use the select() function to select only the columns that are in the vine_table in pgAdmin.
+
+The final vine_table DataFrame should look like this:
+![](Resources/d1.4.png)
 
 ## Deliverable 2: Determine Bias of Vine Reviews
 Deliverable 2 Instructions
@@ -72,20 +87,13 @@ Save all your SQL queries to the Vine_Review_Analysis.sql file, then add it to y
 
 # Summary
 ## Deliverable 3: A Written Report on the Analysis
-Overview of the analysis: Explain the purpose of this analysis.
 
-Results: Using bulleted lists and images of DataFrames as support, address the following questions:
+- How many Vine reviews and non-Vine reviews were there?
+- How many Vine reviews were 5 stars? How many non-Vine reviews were 5 stars?
+- What percentage of Vine reviews were 5 stars? What percentage of non-Vine reviews were 5 stars?
 
-How many Vine reviews and non-Vine reviews were there?
-How many Vine reviews were 5 stars? How many non-Vine reviews were 5 stars?
-What percentage of Vine reviews were 5 stars? What percentage of non-Vine reviews were 5 stars?
-Summary: In your summary, state if there is any positivity bias for reviews in the Vine program. Use the results of your analysis to support your statement. Then, provide one additional analysis that you could do with the dataset to support your statement.
+- Summary: In your summary, state if there is any positivity bias for reviews in the Vine program. Use the results of your analysis to support your statement. Then, provide one additional analysis that you could do with the dataset to support your statement.
 
-- There is a bulleted list that addresses the three questions for unpaid and paid program reviews (7 pt)
-Summary:
-
-- The summary states whether or not there is bias, and the results support this statement (2 pt)
-An additional analysis is recommended to support the statement (2 pt)
 
 In module I was able to learn:
 
@@ -96,3 +104,4 @@ Define Spark and explain how it processes data.
 Describe how NLP collects and analyzes text data.
 Explain how to use AWS Simple Storage Service (S3) and relational databases for basic cloud storage.
 Complete an analysis of an Amazon customer review.
+![](Resources/D.PNG)
