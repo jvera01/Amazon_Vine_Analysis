@@ -69,23 +69,30 @@ Using your knowledge of PySpark, Pandas, or SQL, you’ll determine if there is 
 ![](Resources/D2.PNG)
 
 There is a DataFrame or table for the vine_table data using one of three methods above 
+
 ![](Resources/D2.1.PNG)
 
 The data is filtered to create a DataFrame or table where there are 20 or more total votes 
+
 ![](Resources/D2.2.PNG)
 
 The data is filtered to create a DataFrame or table where the percentage of helpful_votes is equal to or greater than 50% 
+
 ![](Resources/D2.3.PNG)
 
 The data is filtered to create a DataFrame or table where there is a Vine review
 ![](Resources/D2.4.PNG)
 
 The data is filtered to create a DataFrame or table where there isn’t a Vine review
+
 ![](Resources/D2.5.PNG)
 
 The total number of reviews, the number of 5-star reviews, and the percentage 5-star reviews are calculated for all Vine and non-Vine reviews.
 
 
+![](Resources/Results.PNG)
+
+![](Resources/D2.6.PNG)
 
 
 # Summary 
