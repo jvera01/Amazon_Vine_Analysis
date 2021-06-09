@@ -10,16 +10,10 @@ In this project, you’ll have access to approximately 50 datasets. Each one con
 What You're Creating
 This new assignment consists of two technical analysis deliverables and a written report. You will submit the following:
 
-Deliverable 1: Perform ETL on Amazon Product Reviews
-Deliverable 2: Determine Bias of Vine Reviews
-Deliverable 3: A Written Report on the Analysis (README.md)
+- Deliverable 1: Perform ETL on Amazon Product Reviews
+- Deliverable 2: Determine Bias of Vine Reviews
+- Deliverable 3: A Written Report on the Analysis (README.md)
 
-Files
-Use the following links to download the Challenge starter codes.
-
-- Download the SQL table schema (Links to an external site.).
-
-- Download the Amazon ETL starter code (Links to an external site.).
 
 # Results
 
