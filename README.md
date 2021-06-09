@@ -63,39 +63,38 @@ The final vine_table DataFrame should look like this:
 
 ## Deliverable 2: Determine Bias of Vine Reviews
 Deliverable 2 Instructions
+
 Using your knowledge of PySpark, Pandas, or SQL, you’ll determine if there is any bias towards reviews that were written as part of the Vine program. For this analysis, you'll determine if having a paid Vine review makes a difference in the percentage of 5-star reviews.
 
-## Using PySpark
-Create a new Google Colab Notebook, and name it Vine_Review_Analysis.
-Extract the dataset you used in Deliverable 1.
-Recreate the vine_table, and perform your analysis using the steps above.
-Export your Vine_Review_Analysis Google Colab Notebook as an ipynb file, and save it to your Amazon_Vine_Analysis GitHub repository.
+![](Resources/D2.PNG)
 
-## Using Pandas
-From pgAdmin, export the vine_table as a CSV file, and save it to your Amazon_Vine_Analysis GitHub repository.
-Create a new Jupyter Notebook, and name it Vine_Review_Analysis.ipynb.
-Read in the vine_table.csv file as a DataFrame, and perform your analysis using the steps above.
-Save your Vine_Review_Analysis.ipynb file to your Amazon_Vine_Analysis GitHub repository.
+There is a DataFrame or table for the vine_table data using one of three methods above 
+![](Resources/D2.1.PNG)
 
-## Using SQL in pgAdmin
-From your AWS database, export the vine_table as a CSV file and save it to your Amazon_Vine_Analysis GitHub repository.
-In pgAdmin, create a new database that is not linked to your AWS RDS instance. This way, you don’t have to keep incurring charges while connected to your AWS RDS instance.
-Create a new SQL file and name it Vine_Review_Analysis.sql.
-Recreate the vine_table using the schema provided in the challenge_schema.sql file.
-Import the vine_table.csv file into the table, and perform your analysis using the steps above.
-Save all your SQL queries to the Vine_Review_Analysis.sql file, then add it to your Amazon_Vine_Analysis GitHub repository.
+The data is filtered to create a DataFrame or table where there are 20 or more total votes 
+![](Resources/D2.2.PNG)
 
-# Summary
-## Deliverable 3: A Written Report on the Analysis
+The data is filtered to create a DataFrame or table where the percentage of helpful_votes is equal to or greater than 50% 
+![](Resources/D2.3.PNG)
 
-- How many Vine reviews and non-Vine reviews were there?
-- How many Vine reviews were 5 stars? How many non-Vine reviews were 5 stars?
-- What percentage of Vine reviews were 5 stars? What percentage of non-Vine reviews were 5 stars?
+The data is filtered to create a DataFrame or table where there is a Vine review
+![](Resources/D2.4.PNG)
 
-- Summary: In your summary, state if there is any positivity bias for reviews in the Vine program. Use the results of your analysis to support your statement. Then, provide one additional analysis that you could do with the dataset to support your statement.
+The data is filtered to create a DataFrame or table where there isn’t a Vine review
+![](Resources/D2.5.PNG)
+
+The total number of reviews, the number of 5-star reviews, and the percentage 5-star reviews are calculated for all Vine and non-Vine reviews.
 
 
-In module I was able to learn:
+
+
+# Summary 
+In your summary, state if there is any positivity bias for reviews in the Vine program. Use the results of your analysis to support your statement. Then, provide one additional analysis that you could do with the dataset to support your statement.
+
+
+
+
+In this module I was able to learn:
 
 Define big data and describe the challenges associated with it.
 Define Hadoop and name the main elements of its ecosystem.
