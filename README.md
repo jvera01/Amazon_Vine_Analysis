@@ -92,8 +92,7 @@ The total number of reviews, the number of 5-star reviews, and the percentage 5-
 # Summary 
 In your summary, state if there is any positivity bias for reviews in the Vine program. Use the results of your analysis to support your statement. Then, provide one additional analysis that you could do with the dataset to support your statement.
 
-
-
+After looking at the results, I would conclude that there is a positivity bias for reviews in the Vine program.I would say non-vine sample size was immense, the vine sample size was less than 100 entries. While 94 entries are still a decent number to sample with, it could lead to a less significant result. In addition to the current analysis, I could take it a step further and see the percentage of those who purchased the product by filtering through the verified_purchase column to either confirm or fail to confirm if there is a positivity bias for reviews in the Vine program.
 
 In this module I was able to learn:
 
